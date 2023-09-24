@@ -8,7 +8,8 @@ import {
 } from './ContactForm.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { nanoid } from '@reduxjs/toolkit';
-import { addContact, getContacts } from 'redux/contactsSlice';
+import { getContacts } from 'redux/contactsSlice';
+import { addContact } from 'redux/operations';
 
 export const ContactForm = () => {
   const contacts = useSelector(getContacts);
